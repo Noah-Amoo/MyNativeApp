@@ -18,6 +18,7 @@ const MAPPING = {
   'paperplane.fill':   { name: 'send', library: 'MaterialIcons' },
   'chevron.left.forwardslash.chevron.right': { name: 'code', library: 'MaterialIcons' },
   'chevron.right':     { name: 'chevron-right', library: 'MaterialIcons' },
+  'contacts':     { name: 'contacts', library: 'MaterialIcons' },
   'people-circle':     { name: 'people-circle', library: 'Ionicons' }, // Ionicons icon
 } as const;
 
