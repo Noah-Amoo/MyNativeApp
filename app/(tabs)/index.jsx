@@ -21,15 +21,8 @@ export default app
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, 
+    flex: 1,
     flexDirection: 'column',
-  },
-  text: {
-    color: 'white',
-    fontSize: 42,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)'
   },
   image: {
     width: '100%',
@@ -37,5 +30,12 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     justifyContent: 'center',
+  },
+  text: {
+    color: 'white',
+    fontSize: 42,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)'
   },
 })
