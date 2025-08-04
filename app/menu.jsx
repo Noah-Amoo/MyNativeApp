@@ -28,6 +28,7 @@ export default function MenuScreen() {
                 // ListHeaderComponent={headerComp}
                 ListFooterComponent={footerComp}
                 ListFooterComponentStyle={styles.footerComp}
+                ListEmptyComponent={<Text>No</Text>}
                 renderItem={({ item }) =>(
                     <View>
                         <View>
