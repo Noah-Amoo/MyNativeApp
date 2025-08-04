@@ -4,7 +4,7 @@ import { Appearance } from 'react-native';
 
 import { Colors } from '@/constants/Colors';
 
-SplashScreen.preventAutoHideAsync()
+// SplashScreen.preventAutoHideAsync()
 
 export default function RootLayout() {
   const colorScheme = Appearance.getColorScheme()
