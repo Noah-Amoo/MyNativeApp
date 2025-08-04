@@ -12,6 +12,8 @@ export default function MenuScreen() {
 
     const Container = Platform.OS === 'web' ? ScrollView : SafeAreaView;
 
+    const separatorComp = <View style={styles.separator} />
+
     return (
         <Container>
             <FlatList
@@ -19,6 +21,7 @@ export default function MenuScreen() {
                 keyExtractor={(item) => item.id.toString()}
                 showsVerticalScrollIndicator = {false}
                 contentContainerStyle = {styles.contentContainer}
+                ItemSeparatorComponent={separatorComp}
                 renderItem={({ item }) =>(
                     <View>
                         <View>
@@ -42,6 +45,14 @@ function createStyles(theme, colorScheme) {
             paddingBottom: 20,
             paddingHorizontal: 12,
             backgroundColor: theme.background,
+        },
+        separator: {
+            height: 1,
+            backgroundColor: colorScheme === 'dark' ? 'payawhip' : '#000',
+            width: '50%',
+            maxWidth: 300,
+            marginHorizontal: 'auto',
+            marginBottom: 10,
         }
     })
 }
