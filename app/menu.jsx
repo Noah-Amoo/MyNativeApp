@@ -30,13 +30,14 @@ export default function MenuScreen() {
                 ListFooterComponentStyle={styles.footerComp}
                 ListEmptyComponent={<Text>No</Text>}
                 renderItem={({ item }) =>(
-                    <View>
-                        <View>
-                            <Text>{ item.title }</Text>
-                            <Text>{ item.description }</Text>
+                    <View style={styles.row}>
+                        <View style={styles.menuTextRow}>
+                            <Text style={[styles.menuItemTitle, styles.menuItemText]}>{ item.title }</Text>
+                            <Text style={styles.menuItemText}>{ item.description }</Text>
                         </View>
                         <Image 
                             source={MENU_IMAGES[item.id - 1]}
+                            style={styles.menuImage}
                         />
                     </View>
                 )}
@@ -63,6 +64,19 @@ function createStyles(theme, colorScheme) {
         },
         footerComp: {
             marginHorizontal: 'auto',
+        },
+        row: {
+            flexDirection: 'row',
+            width: '100%',
+            maxWidth: 600,
+            height: 100,
+            marginBottom: 10,
+            borderStyle: 'solid',
+            borderColor: colorScheme === 'dark' ? 'papayawhip' : '#000',
+            borderWidth: 1,
+            borderRadius: 20,
+            overflow: 'hidden',
+            marginHorizontal: 'auto'
         }
     })
 }
