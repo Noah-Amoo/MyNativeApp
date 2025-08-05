@@ -28,19 +28,19 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    // "plugins": [
-    //   "expo-router",
-    //   [
-    //     "expo-splash-screen",
-    //     {
-    //       "image": "./assets/images/coffee-splash.png",
-    //       "resizeMode": "cover",
-    //       "backgroundColor": "#000000"
-    //     }
-    //   ]
-    // ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d147a0fe-6e1a-4b54-9ce8-b6416e1ea36e"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d147a0fe-6e1a-4b54-9ce8-b6416e1ea36e"
     }
   }
 }
