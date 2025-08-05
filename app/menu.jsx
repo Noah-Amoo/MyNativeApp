@@ -91,6 +91,10 @@ function createStyles(theme, colorScheme) {
         },
         menuItemText: {
             color: theme.Text,
+        },
+        menuImage: {
+            width: 100,
+            height: 100,
         }
     })
 }
