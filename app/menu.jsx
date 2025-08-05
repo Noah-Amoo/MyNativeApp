@@ -89,5 +89,8 @@ function createStyles(theme, colorScheme) {
             fontSize: 18,
             textDecorationLine: 'underline',
         },
+        menuItemText: {
+            color: theme.Text,
+        }
     })
 }
