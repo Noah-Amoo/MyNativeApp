@@ -77,6 +77,13 @@ function createStyles(theme, colorScheme) {
             borderRadius: 20,
             overflow: 'hidden',
             marginHorizontal: 'auto'
-        }
+        },
+        menuTextRow: {
+            width: '65%',
+            paddingTop: 10,
+            paddingLeft: 10,
+            paddingRight: 5,
+            flexGrow: 1,
+        },
     })
 }
