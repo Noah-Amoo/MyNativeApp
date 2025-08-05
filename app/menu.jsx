@@ -85,5 +85,9 @@ function createStyles(theme, colorScheme) {
             paddingRight: 5,
             flexGrow: 1,
         },
+        menuItemTitle: {
+            fontSize: 18,
+            textDecorationLine: 'underline',
+        },
     })
 }
